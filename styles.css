@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black !important;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    color: white !important;
+
+}
+
+#header{
+    text-align: center;
+    position: sticky;
+    top: 0;
+
+
+
+}
+.logo{
+    margin: 10px auto ;
+    width: 40px ;
+}
+.nav_link li{
+    display: inline-block;
+    margin: 10px auto ;
+    padding: 0 9px;
+}
+.tittle {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.subtitle{
+
+    margin: 20px auto;
+    text-align: center;
+
+}
+.info{
+    margin: 20px auto;
+    width: 85%;
+
+}
+
+.info .subtitle{
+    margin: 20px;
+    text-align: justify;
+}
+.form{
+    text-align: center;
+    margin: 20px auto;
+}
+.form input{
+    padding: 10px;
+    border-radius: 5px;
+}
+#submit{
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.image{
+    text-align: center;
+    margin: 10px auto;
+    width: 60%;
+
+}
+.image .imageD{
+    width: 100%;
+    height: 70%px;
+}
+.video{
+    text-align: center;
+
+}
+.video{
+    text-align: center;
+    margin: 10px auto;
+
+}
+.imgFeatured{
+    text-align: center;
+
+}
+.imgFeatured img{
+    width: 80px;
+    margin: 10px;
+}
+.imgFeatured p{
+
+
+}
+.infoFeatured{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+
+}
+.infoFeatured h1{
+    text-align: center;
+}
+.infoFeatured p{
+
+    text-align: justify;
+}
+.prices{
+    margin: 100px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.prices{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.price {
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px 5px 10px 5px;
+}
+
+.price h1{
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+}
+.caracteristicas{
+    margin-top: 20px;
+    text-align: center;
+}
+.caracteristicas .button{
+    margin-top: 5px;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+}
+.caracteristicas .pvp{
+    font-size: 30px;
+    margin: 10px 0;
+}
+.footer{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+
+/* Desktop view */
+
+@media all and (min-width: 786px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 10px 10%;
+        position: sticky;
+        top: 0;
+    }
+    .logo{
+        cursor: pointer;
+        width: 40px;
+    }
+
+    .nav_link{
+        list-style: none;
+
+    }
+    .nav_link li{
+
+        display: inline-block;
+        padding: 0 20px;
+
+    }
+    .nav_link li a{
+        transition: all 0.35s ease 0s;
+
+
+    }
+
+    .nav_link li a:hover{
+
+        color: lightgray;
+        border-bottom: 1px solid white;
+    }
+
+    .tittle {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .subtitle{
+
+        text-align: center;
+
+    }
+    .info{
+        margin: 20px auto;
+        width: 80%;
+    }
+    .info .subtitle{
+        margin: 20px;
+        text-align: justify;
+    }
+    .form{
+        text-align: center;
+        margin: 20px auto;
+        width: 30%;
+    }
+    .form input{
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    #submit{
+        font-size: 1em;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .image{
+        text-align: center;
+        margin: 10px auto;
+        width: 60%;
+
+    }
+    .image .imageD{
+        width: 100%;
+        height: 70%px;
+    }
+    .video{
+        text-align: center;
+        margin: 10px auto;
+        width: 60%;
+    }
+    .video{
+
+    }
+    .imgFeatured{
+        text-align: center;
+        display: flex;
+        width: 70%;
+        margin: 10px auto;
+        align-items: center;
+    }
+    .imgFeatured img{
+        width: 80px;
+        margin: 10px;
+    }
+    .imgFeatured p{
+
+    }
+    .infoFeatured h1 p{
+        align-items: flex-start;
+    }
+    .infoFeatured h1{
+        text-align: justify;
+    }
+    .infoFeatured p{
+        text-align: justify;
+    }
+    .prices{
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .price {
+        border: 1px solid lightgray;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px 5px 10px 5px;
+    }
+
+    .price h1{
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding: 5px;
+    }
+    .caracteristicas{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .caracteristicas .button{
+        margin-top: 5px;
+        font-size: 1em;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .caracteristicas .pvp{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer ul{
+        margin: auto 15px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .footer ul li{
+        margin: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
